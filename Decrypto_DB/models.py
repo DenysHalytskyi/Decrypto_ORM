@@ -7,5 +7,9 @@ class Cryptocurrency(models.Model):
     description = models.TextField(blank=True)
 
 
+class Wallet(models.Model):
+    address = models.CharField(max_length=255, unique=True)
+    owner = models.CharField(max_length=255)
+    created_at = models.DateTimeField(auto_now_add=True)
 
 
