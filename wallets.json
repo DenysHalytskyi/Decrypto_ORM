@@ -1,47 +1,30 @@
 {
-  "alice": {
-    "email": "alice@example.com",
-    "shop": {
-      "name": "Potion Palace",
-      "description": "Best potions in the kingdom"
+  "crypto": [
+    {"symbol": "BTC", "name": "Bitcoin", "description": "The original cryptocurrency."},
+    {"symbol": "ETH", "name": "Ethereum", "description": "Smart contract platform."}
+  ],
+  "wallets": [
+    {
+      "address": "abc123",
+      "owner": "Alice",
+      "assets": [
+        {"symbol": "BTC", "amount": 0.5},
+        {"symbol": "ETH", "amount": 3.2}
+      ],
+      "transactions": [
+        {"tx_id": "tx001", "symbol": "BTC", "amount": 0.5, "note": "Initial deposit"},
+        {"tx_id": "tx002", "symbol": "ETH", "amount": 3.2, "note": "Bought ETH"}
+      ]
     },
-    "items": [
-      {
-        "name": "Healing Potion",
-        "effect": "Restores 50 HP",
-        "price": 10,
-        "category": {
-          "name": "Potion",
-          "description": "Liquid magic"
-        }
-      }
-    ]
-  },
-  "bob": {
-    "email": "bob@example.com",
-    "shop": {
-      "name": "Weaponry World",
-      "description": "Sharpest blades in town"
-    },
-    "items": [
-      {
-        "name": "Iron Sword",
-        "effect": "Deals 15 physical damage",
-        "price": 20,
-        "category": {
-          "name": "Weapon",
-          "description": "For offense"
-        }
-      },
-      {
-        "name": "Healing Potion",
-        "effect": "Restores 50 HP",
-        "price": 10,
-        "category": {
-          "name": "Potion",
-          "description": "Liquid magic"
-        }
-      }
-    ]
-  }
+    {
+      "address": "def456",
+      "owner": "Bob",
+      "assets": [
+        {"symbol": "ETH", "amount": 1.0}
+      ],
+      "transactions": [
+        {"tx_id": "tx003", "symbol": "ETH", "amount": 1.0, "note": "Transfer from friend"}
+      ]
+    }
+  ]
 }
